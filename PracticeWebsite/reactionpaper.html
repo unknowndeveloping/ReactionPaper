@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For My Baby ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #4b1930, #120812);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .container {
+      background: #fff8ed;
+      width: 80%;
+      max-width: 600px;
+      padding: 40px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: #751f42;
+      font-size: 40px;
+    }
+
+    .photo {
+      display: inline-block;
+      background: white;
+      padding: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transform: rotate(-2deg);
+      transition: 0.4s;
+    }
+
+    .photo:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+
+    .photo img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    p {
+      color: #9a6576;
+      font-size: 18px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #8a2149;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #b93668;
+    }
+
+    #message {
+      display: none;
+      margin-top: 20px;
+      color: #8a2149;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .heart {
+      position: fixed;
+      font-size: 25px;
+      animation: float 4s linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      from {
+        bottom: 0;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 100%;
+        opacity: 0;
+        transform: translateX(100px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>❤️ For My Baby ❤️</h1>
+
+    <div class="photo">
+      <img src="jeem.jpg" alt="My Baby">
+    </div>
+
+    <p>A special memory with the person I love ❤️</p>
+
+    <button onclick="window.location.href='message.html'">
+  Click Me
+</button>
+
+    <div id="message">
+      I love you so much, baby! ❤️
+    </div>
+
+  </div>
+
+  <script>
+   
+  </script>
+
+</body>
+</html>
